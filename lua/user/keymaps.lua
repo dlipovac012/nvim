@@ -6,11 +6,11 @@ local term_opts = { silent = true }
 local keymap = vim.api.nvim_set_keymap
 
 -- remap space as leader key
-keymap("", "<Space>", "<Nop>", opts)
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+-- keymap("", "<Alt>", "<Nop>", opts)
+-- vim.g.mapleader = "<Alt>"
+-- vim.g.maplocalleader = "<Alt>"
 
--- Modes
+
 -- normal_mode = "n"
 -- insert_mode = "i"
 -- visual_mode = "v"
@@ -19,6 +19,10 @@ vim.g.maplocalleader = " "
 -- command_mode = "c"
 --
 -- Normal --
+
+-- Window Split
+keymap("n", "<leader>d", "<C-w>v", opts)
+keymap("n", "<leader>D", "<C-w>s", opts)
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
