@@ -43,3 +43,8 @@ keymap("v", "<O-j>", ":m .+1<cr>==", opts)
 keymap("v", "<O-k>", ":m .-2<cr>==", opts)
 
 keymap("v", "p", "_dP", opts)
+
+-- Telescope
+-- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
+keymap("n", "<C-p>", "<cmd>lua require'telescope.builtin'.find_files()<cr>", opts)
+keymap("n", "<C-f>", "<cmd>Telescope live_grep<cr>", opts)

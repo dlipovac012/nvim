@@ -48,6 +48,10 @@ return packer.startup(function(use)
 	
 	-- Colorschemes
 	use "folke/tokyonight.nvim"
+	use "morhetz/gruvbox"
+
+	-- Startup
+
 
 	-- cmp
 	use "hrsh7th/nvim-cmp"
@@ -56,6 +60,8 @@ return packer.startup(function(use)
 	use "hrsh7th/cmp-cmdline"
 	use "saadparwaiz1/cmp_luasnip"
 	use "hrsh7th/cmp-nvim-lsp"
+	use "windwp/nvim-autopairs"
+	use "numToStr/Comment.nvim"
 
 	-- snippets
 	use "L3MON4D3/LuaSnip"
@@ -71,6 +77,18 @@ return packer.startup(function(use)
 	use "neovim/nvim-lspconfig"
 	use "williamboman/nvim-lsp-installer"
 
+	-- Telescope
+	use "nvim-telescope/telescope.nvim"
+	-- use 'nvim-telescope/telescope-media-files.nvim'
+
+	  -- Treesitter
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  }
+  use "p00f/nvim-ts-rainbow"
+	use "JoosepAlviste/nvim-ts-context-commentstring"
+	
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
