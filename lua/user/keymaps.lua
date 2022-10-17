@@ -29,7 +29,7 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+--[[ keymap("n", "<leader>e", ":Lex 30<cr>", opts) ]]
 
 -- Window Resize
 keymap("n", "<C-Up>", ":resize +2<cr>", opts)
@@ -48,3 +48,6 @@ keymap("v", "p", "_dP", opts)
 -- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<C-p>", "<cmd>lua require'telescope.builtin'.find_files()<cr>", opts)
 keymap("n", "<C-f>", "<cmd>Telescope live_grep<cr>", opts)
+
+-- NvimTree
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
