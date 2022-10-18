@@ -45,12 +45,17 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
 	use "vim-airline/vim-airline"
-	use "kyazdani42/nvim-web-devicons"
-	use "kyazdani42/nvim-tree.lua"
-	
+	use "nvim-tree/nvim-web-devicons"
+	use "nvim-tree/nvim-tree.lua"
+	use "glepnir/dashboard-nvim"
+
 	-- Colorschemes
 	use "folke/tokyonight.nvim"
 	use "morhetz/gruvbox"
+	use "ayu-theme/ayu-vim"
+	use "bluz71/vim-nightfly-guicolors"
+	use "pineapplegiant/spaceduck"
+	use "challenger-deep-theme/vim"
 
 	-- Startup
 
