@@ -47,7 +47,9 @@ return packer.startup(function(use)
 	use "vim-airline/vim-airline"
 	use "nvim-tree/nvim-web-devicons"
 	use "nvim-tree/nvim-tree.lua"
-	use "glepnir/dashboard-nvim"
+	use "akinsho/bufferline.nvim"
+  use "moll/vim-bbye"
+	use "akinsho/toggleterm.nvim"
 
 	-- Colorschemes
 	use "folke/tokyonight.nvim"
@@ -58,7 +60,7 @@ return packer.startup(function(use)
 	use "challenger-deep-theme/vim"
 
 	-- Startup
-
+	use "glepnir/dashboard-nvim"
 
 	-- cmp
 	use "hrsh7th/nvim-cmp"
@@ -83,6 +85,7 @@ return packer.startup(function(use)
 	-- LSP
 	use "neovim/nvim-lspconfig"
 	use "williamboman/nvim-lsp-installer"
+	use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
 
 	-- Telescope
 	use "nvim-telescope/telescope.nvim"
