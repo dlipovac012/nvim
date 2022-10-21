@@ -34,6 +34,7 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
+keymap("n", "<C-w>", ":BufferLinePickClose<CR>", opts)
 
 -- Window Resize
 keymap("n", "<C-Up>", ":resize +2<cr>", opts)
