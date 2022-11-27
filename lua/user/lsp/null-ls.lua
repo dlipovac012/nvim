@@ -17,8 +17,10 @@ null_ls.setup {
 		formatting.beautysh,
 		formatting.terraform_fmt,
 		formatting.gofmt,
+		formatting.rustfmt,
     diagnostics.flake8,
 		diagnostics.eslint,
+		diagnostics.jsonlint
   },
 }
 
