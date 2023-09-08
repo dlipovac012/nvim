@@ -1,15 +1,21 @@
 -- :help options
 
+local options = {
+	-- System settings
+	-- ---------------
 
--- System settings
-
-vim.opt.backup = false
-vim.opt.swapfile = false
-vim.opt.writebackup = false
+	backup = false,
+	swapfile = false,
+	writebackup = false,
 
 
+	-- User settings
+	-- -------------
 
--- User settings
+	number = true,
+	relativenumber = true,
+}
 
-vim.opt.number = true
-vim.opt.relativenumber = true
+for k, v in pairs(options) do
+	vim.opt[k] = v
+end
