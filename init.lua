@@ -1,4 +1,10 @@
 require "prod.options"
 require "prod.keymaps"
 require "prod.plugins"
-
+require "prod.comments"
+require "prod.autopairs"
+require "prod.leap"
+require "prod.nvimtree"
+require "prod.treesitter"
+require "prod.telescope"
+require "prod.toggleterm"

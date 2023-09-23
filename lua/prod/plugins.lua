@@ -31,4 +31,30 @@ return lazy.setup({
 	{ "folke/which-key.nvim", lazy = true },
 	{ "folke/neoconf.nvim", cmd = "Neoconf" },
 	"folke/neodev.nvim",
+	"ggandor/leap.nvim",
+	"nvim-tree/nvim-tree.lua",
+	"nvim-tree/nvim-web-devicons",
+	"windwp/nvim-autopairs",
+	{ 
+		"nvim-treesitter/nvim-treesitter", 
+		run = ":TSUpdate",
+	},
+
+	"numToStr/Comment.nvim",
+	"windwp/nvim-autopairs",
+
+	-- CMP
+	"neovim/nvim-lspconfig",
+	"hrsh7th/cmp-nvim-lsp",
+	"hrsh7th/cmp-buffer",
+	"hrsh7th/cmp-path",
+	"hrsh7th/cmp-cmdline",
+	"hrsh7th/nvim-cmp",
+
+	-- Telescope
+	{
+		'nvim-telescope/telescope.nvim',
+		dependencies = { 'nvim-lua/plenary.nvim' }
+	},
+	{'akinsho/toggleterm.nvim', version = "*", opts = { } },
 })
