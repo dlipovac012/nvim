@@ -20,16 +20,11 @@ telescope.setup({
 		selection_caret = "* ",
 		path_display = { "smart" },
 		file_ignore_patterns = {"node_modules", "env", "bin"},
-		layout_config = {
-			vertical = { width = 0.7 }
-		},
+		layout_strategy = 'horizontal',
+		layout_config = { width = 0.7 },
 	},
 	mappings = {},
-	pickers = {
-		find_files = {
-			theme = "dropdown",
-		}
-	},
+	pickers = {},
 	extensions = {},
 })
 
