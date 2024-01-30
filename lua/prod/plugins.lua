@@ -43,6 +43,9 @@ return lazy.setup({
 	"numToStr/Comment.nvim",
 	"windwp/nvim-autopairs",
 
+	-- Bufferline
+	{'akinsho/bufferline.nvim', version = "4.5.0", dependencies = 'nvim-tree/nvim-web-devicons'},
+
 	-- CMP
 	"neovim/nvim-lspconfig",
 	"hrsh7th/cmp-nvim-lsp",
@@ -50,9 +53,9 @@ return lazy.setup({
 	"hrsh7th/cmp-path",
 	"hrsh7th/cmp-cmdline",
 	"hrsh7th/nvim-cmp",
-
 	"L3MON4D3/LuaSnip",
 	"saadparwaiz1/cmp_luasnip",
+	-- "rafamadriz/friendly-snippets",
 
 	-- Telescope
 	{
