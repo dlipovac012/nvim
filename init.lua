@@ -8,5 +8,6 @@ require "prod.nvimtree"
 require "prod.treesitter"
 require "prod.telescope"
 require "prod.toggleterm"
+require "prod.bufferline"
 
 require "prod.cmp"

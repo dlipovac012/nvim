@@ -32,14 +32,9 @@ ntree.setup({
 	},
 	renderer = {
 		group_empty = true,
+		highlight_git = true,
 	},
 	filters = {
-		dotfiles = true,
-	},
-	open_on_setup = false,
-	ignore_ft_on_setup = {
-		"startify",
-		"dashboard",
-		"alpha",
+		dotfiles = false,
 	},
 })
